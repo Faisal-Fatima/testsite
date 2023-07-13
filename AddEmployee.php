@@ -91,7 +91,7 @@ try {
 
 
 <div class="form" id="form">
-    <form method="POST" action =" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" action="eform.php">
+    <form method="POST" action =" <?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         <h1>Add a New Employee</h1>
         <table>
             <tr>

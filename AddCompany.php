@@ -62,7 +62,7 @@ function test_input($data) {
 
 
 <div class="form">
-    <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" action="cform.php">
+    <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
         <h1>Add a New Company</h1>
         <table>
             <tr>
@@ -146,10 +146,6 @@ if(isset($_POST['submit']))
         $stmt = $conn->prepare($sql);
         $stmt->execute([$name, $email, $logo , $url]);
       //fire query to save entries and check it with if statement
-
-
-
-
       ?>
       <script>
         document.getElementById('form').style.display = 'none';
